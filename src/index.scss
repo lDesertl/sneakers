@@ -200,7 +200,9 @@ header {
   width: 385px;
   z-index: 3;
   background: #FFFFFF;
-
+  .green{
+    color: #87C20A;
+  }
   .backbtn{
 
     width: 245px;
@@ -221,4 +223,14 @@ header {
   .cartWrapper{
     margin-top: 90%;
   }
+}
+.discrpition{
+  margin-left: 10px;
+}
+.cartcardswrapper{
+  width: 325px;
+  height: 119px;
+}
+.coast{
+  height: 18px;
 }
