@@ -52,6 +52,8 @@ header {
 }
 
 .content {
+  width: 100%;
+
   h1 {
     margin: 0;
   }
@@ -69,6 +71,7 @@ header {
   width: 210px;
   height: 260px;
   box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.3);
+
   img {
     margin-top: -29px;
   }
@@ -110,7 +113,8 @@ header {
   border-radius: 7px;
 
 }
-.liked{
+
+.liked {
   position: absolute;
   width: 32px;
   height: 32px;
@@ -121,7 +125,8 @@ header {
   box-sizing: border-box;
   border-radius: 7px;
 }
-.slider{
+
+.slider {
   width: 100%;
   margin-top: 45px;
   height: 300px;
@@ -129,24 +134,25 @@ header {
 
   border-radius: 20px;
 
-.btn{
+  .btn {
 
 
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  left: 1121px;
-  top: 425px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 1121px;
+    top: 425px;
 
-  background: #FFFFFF;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
-  border-radius: 43px;
-  transform: rotate(-180deg);
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 43px;
+    transform: rotate(-180deg);
 
 
+  }
 }
-}
-.abs{
+
+.abs {
   position: absolute;
 }
 
@@ -159,8 +165,9 @@ header {
   background: #FFFFFF;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
   border-radius: 43px;
-  transform: translate(0,-50%);
-  svg{
+  transform: translate(0, -50%);
+
+  svg {
     transform: rotate(-180deg);
   }
 }
@@ -174,23 +181,25 @@ header {
   background: #FFFFFF;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
   border-radius: 43px;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
 
 
 }
 
-.sliderWrap{
+.sliderWrap {
   width: 63%;
   height: 300px;
   background-image: url("../public/img/slider.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-.arrows{
+
+.arrows {
   width: 100%;
   height: 100%;
 }
-.blackout{
+
+.blackout {
   position: fixed;
   top: 0;
   left: 0;
@@ -203,7 +212,8 @@ header {
   opacity: .6;
 
 }
-.cart{
+
+.cart {
   position: fixed;
   top: 0;
   right: 0;
@@ -211,55 +221,162 @@ header {
   width: 385px;
   z-index: 3;
   background: #FFFFFF;
-  .green{
+
+  .green {
     color: #87C20A;
   }
-  .backbtn{
 
+  .backbtn {
     width: 245px;
     height: 55px;
     border: none;
     color: #FFFFFF;
     background: #9DD458;
     border-radius: 18px;
-
   }
-  h4{
+
+  h4 {
     opacity: .6;
   }
 
-  .H2{
+  .H2 {
     margin-left: 15px;
   }
-  .cartWrapper{
-    margin-top: 90%;
+
+  .cartWrapper {
+    height: 900px;
   }
 
 }
 
-.cartcardswrapper{
+.cartcardswrapper {
   width: 325px;
   height: 119px;
 }
-.coast{
+
+.coast {
   top: 0;
   height: 18px;
 }
 
-.qwe{
+.qwe {
   background-color: #9DD458;
 }
 
-.price{
+.price {
   top: 10px;
 }
-.cartplus{
-  background-color: #87C20A!important;
+
+.cartplus {
+  background-color: #87C20A !important;
 }
-.coastDescription{
-  h5{
+
+.coastDescription {
+  h5 {
     height: 0;
     width: 200px;
     margin-bottom: 35px;
   }
 }
+
+.cartcards {
+  img {
+    margin-top: -15px;
+  }
+
+  width: 325px;
+  height: 119px;
+  left: 895px;
+  top: 230px;
+
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 20px;
+
+}
+
+.orderbtn {
+
+  width: 245px;
+  height: 55px;
+  border: none;
+  color: #FFFFFF;
+  background: #9DD458;
+  border-radius: 18px;
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.likecartempty {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.none {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  .backbtn {
+    width: 245px;
+    height: 55px;
+    border: none;
+    color: #FFFFFF;
+    background: #9DD458;
+    border-radius: 18px;
+    margin-top: 40px;
+  }
+}
+
+.likecart {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: #FFFFFF;
+  display: flex;
+  padding: 50px;
+}
+
+.likecard {
+  margin-bottom: 40px;
+  border: 1px solid #F3F3F3;
+  border-radius: 40px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 210px;
+  height: 260px;
+  box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.likewrapper{
+  width: 100%;
+  height: 100%;
+}
+.backlike{
+  width: 35px;
+  height: 35px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+.d-none{
+  display: none;
+}
+

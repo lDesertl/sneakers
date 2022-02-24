@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473cb442-792e-434d-9187-cafe52c646cd" name="Changes" comment="+cart, red slider">
+    <list default="true" id="473cb442-792e-434d-9187-cafe52c646cd" name="Changes" comment="+bd redcards redcart redicons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +49,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\79177\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\213.6777.57\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -74,7 +73,19 @@
       <workItem from="1645460456610" duration="1112000" />
       <workItem from="1645464608317" duration="13032000" />
       <workItem from="1645532555127" duration="4663000" />
-      <workItem from="1645552769620" duration="15526000" />
+      <workItem from="1645552769620" duration="16191000" />
+      <workItem from="1645611813473" duration="6000" />
+      <workItem from="1645615018057" duration="3120000" />
+      <workItem from="1645620895255" duration="2000" />
+      <workItem from="1645627777940" duration="1335000" />
+      <workItem from="1645631961694" duration="14000" />
+      <workItem from="1645631982542" duration="171000" />
+      <workItem from="1645633119881" duration="18000" />
+      <workItem from="1645682040351" duration="4115000" />
+      <workItem from="1645688556465" duration="287000" />
+      <workItem from="1645690595240" duration="5886000" />
+      <workItem from="1645725371688" duration="1823000" />
+      <workItem from="1645727431307" duration="5551000" />
     </task>
     <task id="LOCAL-00001" summary="+slider">
       <created>1645467036340</created>
@@ -97,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645532589385</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="+bd redcards redcart redicons">
+      <created>1645569577777</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645569577777</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +167,7 @@
     <MESSAGE value="start of SPA development" />
     <MESSAGE value="+slider" />
     <MESSAGE value="+cart, red slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="+cart, red slider" />
+    <MESSAGE value="+bd redcards redcart redicons" />
+    <option name="LAST_COMMIT_MESSAGE" value="+bd redcards redcart redicons" />
   </component>
 </project>
