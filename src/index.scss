@@ -390,9 +390,12 @@ header {
   z-index: 4;
   background: #FFFFFF;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 50px;
   border-radius: 20px;
+  align-items: center;
+  .orderwrapper{
+    left: 0;
+  }
 }
 .coastwrapper{
   bottom: -200px;
@@ -409,7 +412,9 @@ header {
   z-index: 4;
   background: #FFFFFF;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 50px;
   border-radius: 20px;
+}
+.orderwrapper{
+  left: 0;
 }
