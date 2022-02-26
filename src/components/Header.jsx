@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -18,6 +19,7 @@ const Header = () => {
                 </div>
                 <div className="headerRight">
                     <ul>
+                        <Link to = {"/cart"}>
                         <li className="cu-p">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -36,6 +38,8 @@ const Header = () => {
                                 1205 руб.
                         </span>
                         </li>
+                        </Link>
+
                         <li className="cu-p">
                             <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
