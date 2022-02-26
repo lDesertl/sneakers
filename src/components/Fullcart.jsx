@@ -1,7 +1,8 @@
 import React from 'react';
-import Datasneakers from "../Data/Datasneakers";
+import {useSelector} from "react-redux";
 
 const Fullcart = () => {
+    const datasneakers = useSelector(state =>  state.sneakers)
     return (
         <div>
             <div className="fullcart">
@@ -13,7 +14,7 @@ const Fullcart = () => {
                     <div>
                         <div className="cartWrapper d-flex flex-column justify-between align-center text-center">
                             <div className="cartcardswrapper d-flex flex-column">
-                                {Datasneakers.map(({img, id, price, name, description, like, cart}) => {
+                                {datasneakers.map(({img, id, price, name, description, like, cart}) => {
 
                                         return (
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import Datasneakers from "../Data/Datasneakers";
+import {useSelector} from "react-redux";
 const Sneakers = () => {
+    const datasneakers = useSelector(state => state.sneakers)
     return (
         <div>
             <div className="content p-40">
@@ -8,7 +9,7 @@ const Sneakers = () => {
                     Все кроссовки
                 </h1>
                 <div className="d-flex flex-wrap justify-around">
-                    {Datasneakers.map(({img, id, price, name, description, like, cart}) => {
+                    {datasneakers.map(({img, id, price, name, description, like, cart}) => {
 
                         return (
 
@@ -54,12 +55,12 @@ const Sneakers = () => {
                                         <b>{price} ₽</b>
 
                                     </div>
-                                    {Datasneakers[id].cart ?
+                                    {datasneakers[id].cart ?
 
                                         <button className="cu-p cartplus" onClick={() => {
-                                            Datasneakers[id].cart = !cart;
+                                            datasneakers[id].cart = !cart;
                                             console.log(cart);
-                                            console.log(Datasneakers[id].cart);
+                                            console.log(datasneakers[id].cart);
                                         }}>
                                             <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +94,7 @@ const Sneakers = () => {
 
                                         :
                                         <button className="cu-p" onClick={() => {
-                                            console.log(Datasneakers[id].cart);
+                                            console.log(datasneakers[id].cart);
                                         }}>
 
                                             <svg width="11" height="11" viewBox="0 0 12 12" fill="none"

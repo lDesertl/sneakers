@@ -1,7 +1,8 @@
 import React from 'react';
-import Datasneakers from "../Data/Datasneakers";
+import {useSelector} from "react-redux";
 
 const Likecart = () => {
+    const datasneakers = useSelector(state =>  state.sneakers)
     return (
         <div>
             <div className="likecart flex-column">
@@ -20,7 +21,7 @@ const Likecart = () => {
                 </div>
                 <br/>
                 <div className="likewrapper d-flex justify-around flex-wrap">
-                    {Datasneakers.map(({img, id, price, name, description, like, cart}) => {
+                    {datasneakers.map(({img, id, price, name, description, like, cart}) => {
                         return (
                             <div className={!like && "d-none"}>
 

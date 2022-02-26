@@ -9,8 +9,12 @@ import Emptylikecart from "./components/Emptylikecart";
 import Likecart from "./components/Likecart";
 import Orders from "./components/Orders";
 import Ordersempty from "./components/Ordersempty";
+import {useDispatch, useSelector} from "react-redux";
 const App = () => {
-    return (
+        const dispatch = useDispatch()
+        const order = useSelector(state => state.sneakers[10].orders)
+        console.log(order);
+        return (
         <div className="wrapper clear">
             <Header />
             <Slider />
