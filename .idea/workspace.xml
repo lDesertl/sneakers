@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473cb442-792e-434d-9187-cafe52c646cd" name="Changes" comment="add redax">
-      <change afterPath="$PROJECT_DIR$/src/components/Cart.jsx" afterDir="false" />
+    <list default="true" id="473cb442-792e-434d-9187-cafe52c646cd" name="Changes" comment="AddRouter RedComponents">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Emptycart.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Likecart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Like.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Like.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Like.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ordercart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ordercart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Orders.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sneakers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sneakers.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,8 @@
       <workItem from="1645827198749" duration="1588000" />
       <workItem from="1645828969283" duration="20000" />
       <workItem from="1645873634609" duration="19376000" />
-      <workItem from="1645912476172" duration="757000" />
+      <workItem from="1645912476172" duration="1487000" />
+      <workItem from="1645975950869" duration="16570000" />
     </task>
     <task id="LOCAL-00001" summary="+slider">
       <created>1645467036340</created>
@@ -185,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645894344964</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="AddRouter RedComponents">
+      <created>1645913374161</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1645913374161</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +252,7 @@
     <MESSAGE value="Minor corrections" />
     <MESSAGE value="componentization" />
     <MESSAGE value="add redax" />
-    <option name="LAST_COMMIT_MESSAGE" value="add redax" />
+    <MESSAGE value="AddRouter RedComponents" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddRouter RedComponents" />
   </component>
 </project>

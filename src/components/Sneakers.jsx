@@ -1,6 +1,9 @@
 import React from 'react';
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {type} from "@testing-library/user-event/dist/type";
+import {stealid} from "../index";
 const Sneakers = () => {
+    const dispatch = useDispatch()
     const datasneakers = useSelector(state => state.sneakers)
     return (
         <div>
@@ -16,7 +19,9 @@ const Sneakers = () => {
                             <div className="card">
                                 {like ?
 
-                                    <div className="liked d-flex align-center justify-center cu-p">
+                                    <div className="liked d-flex align-center justify-center cu-p" onClick={()=>{
+                                        dispatch(stealid("LIKE", id))
+                                    }}>
                                         <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -30,7 +35,9 @@ const Sneakers = () => {
                                     :
 
 
-                                    <div className="like d-flex align-center justify-center cu-p">
+                                    <div className="like d-flex align-center justify-center cu-p" onClick={()=>{
+                                        dispatch(stealid("LIKE",id))
+                                    }}>
                                         <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -58,9 +65,7 @@ const Sneakers = () => {
                                     {datasneakers[id].cart ?
 
                                         <button className="cu-p cartplus" onClick={() => {
-                                            datasneakers[id].cart = !cart;
-                                            console.log(cart);
-                                            console.log(datasneakers[id].cart);
+                                           dispatch(stealid("CART", id))
                                         }}>
                                             <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +99,7 @@ const Sneakers = () => {
 
                                         :
                                         <button className="cu-p" onClick={() => {
-                                            console.log(datasneakers[id].cart);
+                                            dispatch(stealid("CART", id))
                                         }}>
 
                                             <svg width="11" height="11" viewBox="0 0 12 12" fill="none"

@@ -5,6 +5,7 @@ const Header = () => {
     return (
         <div>
             <header className="align-center p-40">
+                <Link to={"/"}>
                 <div className="headerLeft">
                     <img width={40} height={40} src="/img/logo.png" alt="logo"/>
 
@@ -17,6 +18,7 @@ const Header = () => {
                         </p>
                     </div>
                 </div>
+                </Link>
                 <div className="headerRight">
                     <ul>
                         <Link to = {"/cart"}>
@@ -40,6 +42,7 @@ const Header = () => {
                         </li>
                         </Link>
 
+                        <Link to={"like"}>
                         <li className="cu-p">
                             <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -49,6 +52,8 @@ const Header = () => {
                             </svg>
 
                         </li>
+                        </Link>
+                        <Link to={"orders"}>
                         <li className="cu-p">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +62,7 @@ const Header = () => {
                                       fill="#9B9B9B"/>
                             </svg>
                         </li>
-                    </ul>
+                        </Link>                    </ul>
                 </div>
             </header>
         </div>

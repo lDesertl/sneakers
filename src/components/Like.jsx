@@ -1,20 +1,32 @@
 import React from 'react';
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {Link} from "react-router-dom";
+import {stealid} from "../index";
 
 const Like = () => {
+    let likecol = 0
+    const dispatch = useDispatch()
     const datasneakers = useSelector(state =>  state.sneakers)
     return (
         <div>
+            {datasneakers.map(({like}) =>{
+                like && likecol++
+            } )}
+            {likecol != 0 ?
             <div className="likecart flex-column">
                 <div className="d-flex align-center">
 
-
+                    <Link to={"/"}>
                     <div className="backlike d-flex align-center justify-center">
+
                         <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 11L1 6L6 1" stroke="#C8C8C8" stroke-width="1.5" stroke-linecap="round"
                                   stroke-linejoin="round"/>
                         </svg>
+
                     </div>
+            </Link>
+
                     <h1>
                         Мои закладки
                     </h1>
@@ -29,7 +41,9 @@ const Like = () => {
 
                                     <div>
                                         <div className="likecard">
-                                            <div className="liked d-flex align-center justify-center cu-p">
+                                            <div className="liked d-flex align-center justify-center cu-p" onClick={()=>{
+                                                dispatch(stealid("LIKE", id))
+                                            }}>
                                                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
                                                      xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -64,20 +78,25 @@ const Like = () => {
                         )
                     })}
                 </div>
+
             </div>
+                :
             <div className="likecartempty">
                 <div className="none">
                     <img src="img/smile1.png" width={70} height={70} alt=""/>
                     <h2>Закладок нет :(</h2>
                     <h3>Вы ничего не добавляли в закладки</h3>
-                    <button className="backbtn d-flex  align-center justify-center"><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <Link to={"/"}>
+                    <button className="backbtn d-flex  align-center justify-center cu-p"><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.7144 7L1.00007 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M7 13L1 7L7 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                         &nbsp;&nbsp;&nbsp;&nbsp;Вернуться назад
                     </button>
+                    </Link>
                 </div>
             </div>
+            }
         </div>
     );
 };

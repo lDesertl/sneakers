@@ -5,10 +5,9 @@ import App from './App';
 import './index.scss';
 import 'macro-css';
 import {createStore} from "redux";
-import provider from "react-redux/lib/components/Provider";
 import {Provider} from "react-redux";
-import {compareArraysAsSet} from "@testing-library/jest-dom/dist/utils";
 import {BrowserRouter as Router} from "react-router-dom";
+import orders from "./components/Orders";
 
 const dataSneakers = {
     sneakers: [
@@ -18,9 +17,9 @@ const dataSneakers = {
             description: "Мужские Кроссовки",
             img: "img/sneakers/1.jpg",
             price: "12 999",
-            cart: true,
-            like: true,
-            orders: 3,
+            cart: false,
+            like: false,
+            orders: 0,
         },
         {
             id: 1,
@@ -28,7 +27,7 @@ const dataSneakers = {
             description: "Мужские Кроссовки",
             img: "img/sneakers/2.jpg",
             price: "12 999",
-            cart: true,
+            cart: false,
             like: false,
             orders: 0,
         },
@@ -39,7 +38,7 @@ const dataSneakers = {
             img: "img/sneakers/3.jpg",
             price: "8 499",
             cart: false,
-            like: true,
+            like: false,
             orders: 0,
         },
         {
@@ -79,7 +78,7 @@ const dataSneakers = {
             img: "img/sneakers/7.jpg",
             price: "10 799",
             cart: false,
-            like: true,
+            like: false,
             orders: 0,
         },
         {
@@ -89,7 +88,7 @@ const dataSneakers = {
             img: "img/sneakers/8.jpg",
             price: "16 499",
             cart: false,
-            like: true,
+            like: false,
             orders: 0,
         },
         {
@@ -119,8 +118,8 @@ const dataSneakers = {
             img: "img/sneakers/11.jpg",
             price: "8 999",
             cart: false,
-            like: true,
-            orders: 2,
+            like: false,
+            orders: 0,
         },
         {
             id: 11,
@@ -130,23 +129,46 @@ const dataSneakers = {
             price: "11 299",
             cart: false,
             like: false,
-            orders: 3,
+            orders: 0,
         }
     ]
 }
 
-
-const reduser = (state = dataSneakers, action, id) => {
+export const stealid = (type, id) => ({
+    type: type,
+    id: id
+})
+const reduser = (state = dataSneakers, action) => {
     switch (action.type) {
-        case "ADDORDER":
-            return {...state[id], orders: state[id].order + action.payload}
+        case "ADD_ORDER": {
+            let stateCopy = {...state}
+            stateCopy.sneakers=[...state.sneakers]
+            stateCopy.sneakers[action.id].orders++
+            return stateCopy
+        }
+        case "CART": {
+            let stateCopy = {...state};
+            stateCopy.sneakers = [...state.sneakers]
+            stateCopy.sneakers[action.id].cart = !state.sneakers[action.id].cart
+
+            return stateCopy
+        }
+
+
+        case "LIKE": {
+            let stateCopy = {...state};
+            stateCopy.sneakers = [...state.sneakers]
+            stateCopy.sneakers[action.id].like = !state.sneakers[action.id].like
+
+            return stateCopy
+        }
         default:
             return state
     }
 }
 
 const store = createStore(reduser)
-
+window.store = store
 
 ReactDOM.render(
     <Router>
