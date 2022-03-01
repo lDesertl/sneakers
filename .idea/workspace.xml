@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="473cb442-792e-434d-9187-cafe52c646cd" name="Changes" comment="Pre-Final Verson">
+    <list default="true" id="473cb442-792e-434d-9187-cafe52c646cd" name="Changes" comment="trying to connect the swiper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +101,7 @@
       <workItem from="1645912476172" duration="1487000" />
       <workItem from="1645975950869" duration="16635000" />
       <workItem from="1646038260364" duration="2039000" />
-      <workItem from="1646147497842" duration="5117000" />
+      <workItem from="1646147497842" duration="6011000" />
     </task>
     <task id="LOCAL-00001" summary="+slider">
       <created>1645467036340</created>
@@ -197,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645999097746</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="trying to connect the swiper">
+      <created>1646152800857</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1646152800857</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +262,7 @@
     <MESSAGE value="add redax" />
     <MESSAGE value="AddRouter RedComponents" />
     <MESSAGE value="Pre-Final Verson" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pre-Final Verson" />
+    <MESSAGE value="trying to connect the swiper" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to connect the swiper" />
   </component>
 </project>
