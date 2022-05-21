@@ -10,23 +10,24 @@ import Swiper from 'swiper/bundle';
 import {Navigation, Pagination, Scrollbar} from "swiper";
 
 
-const swiper = new Swiper('.swiper', {
-    // configure Swiper to use modules
-    modules: [Navigation, Pagination, Scrollbar],
 
-    direction: 'horizontal',
-    loop: true,
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-});
 
 const Slider = () => {
 
+    const swiper = new Swiper('.swiper', {
+        // configure Swiper to use modules
+        modules: [Navigation, Pagination, Scrollbar],
+
+        direction: 'horizontal',
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    });
 
     return (
 
@@ -42,7 +43,7 @@ const Slider = () => {
                         <div className="swiper-slide d-flex align-center justify-center"><img src="img/froggy.png" alt=""/></div>
                         <div className="swiper-slide d-flex align-center justify-center"><img src="img/sneakers/1.jpg" alt=""/></div>
                     </div>
-                    <div className="swiper-button-prev"></div>
+                    <div className="swiper-button-prev "></div>
                     <div className="swiper-button-next"></div>
                 </div>
             </slider>
